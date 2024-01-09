@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+       xmlns:sec="http://www.springframework.org/schema/security"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security.xsd">
+	  <sec:http pattern="/download" security="none"/>
+	   <sec:http auto-config="true">
+		<sec:intercept-url pattern="/admin" access="hasRole('ROLE_ADMIN')" requires-channel="https"/>
+		<sec:access-denied-handler error-page="/login?denay" />
+		<sec:form-login 
+            login-page="/login" 
+            default-target-url="/home" 
+            authentication-failure-forward-url="/login?error"
+            username-parameter="username"
+            password-parameter="password" />
+         <sec:logout logout-success-url="/login?logout"/> 
+        <!-- enable csrf protection -->
+        <sec:csrf disabled="true" />
+	</sec:http>
+	  <sec:authentication-manager erase-credentials="false">
+		<sec:authentication-provider ref="ldapAuthProvider"/>
+	</sec:authentication-manager>
+	<bean id="ldapAuthProvider"
+	class="org.springframework.security.ldap.authentication.ad.ActiveDirectoryLdapAuthenticationProvider">
+	<constructor-arg value="ecdswc.com.et" />
+	<constructor-arg value="ldap://172.20.2.6:389/"/>
+	</bean>
+	 <sec:authentication-manager erase-credentials="false">
+		<sec:authentication-provider ref="ldapAuthProvider1"/>
+	</sec:authentication-manager>
+	<bean id="ldapAuthProvider1"
+	class="org.springframework.security.ldap.authentication.ad.ActiveDirectoryLdapAuthenticationProvider">
+	<constructor-arg value="ecdswc.com.et" />
+	<constructor-arg value="ldap://172.20.2.5:389/"/>
+	</bean>
+</beans>

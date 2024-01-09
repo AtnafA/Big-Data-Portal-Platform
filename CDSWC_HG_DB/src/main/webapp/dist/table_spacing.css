@@ -1,0 +1,209 @@
+table{
+white-space: nowrap; 
+table-layout: fixed;
+left: 0px;
+top: 0px;
+width: 99.5%;
+}
+thead{
+text-align: center;
+background-color: #28527b;
+color: white;
+z-index: 2;
+}
+thead tr {
+  padding-right: 17px;
+  box-shadow: 0 4px 6px rgba(0,0,0,.6);
+  z-index: 2;
+}
+th {
+  border-right: 1px solid rgba(0,0,0,.3);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+tbody {
+  display: block;
+  min-height: calc(280px + 1 px);
+  max-height: 355px;
+  /*use calc for fixed ie9 & <*/
+  overflow-y:scroll;
+  color: #000;
+}
+tr {
+  display: block;
+  overflow: hidden;
+}
+tr:nth-child(even) {
+  background-color: #A3ADAC;
+}
+table{
+border: 1px solid black;
+}
+th, td {
+border-right: 1px solid rgba(0,0,0,.3);
+border-collapse: collapse;
+text-align: left;
+padding-right: 6px;
+padding-top:6px;
+font-size: 13px;
+width: 0%;
+float:left;
+}
+td:nth-child(1),th:nth-child(1){
+width: 17%;
+}
+td:nth-child(2),th:nth-child(2){
+width: 9%;
+}
+td:nth-child(3),th:nth-child(3){
+width: 9%;
+}
+td:nth-child(4),th:nth-child(4){
+width: 9%;
+}
+td:nth-child(5),th:nth-child(5){
+width: 8%;
+}
+td:nth-child(6),th:nth-child(6){
+width: 7%;
+}
+td:nth-child(7),th:nth-child(7){
+width: 14%;
+}
+td:nth-child(8),th:nth-child(8){
+width: 12%;
+}
+td:nth-child(9),th:nth-child(9){
+width: 4%;
+}
+/*Table header and td managemant for project Document */
+.tab_project td:nth-child(1),.tab_project th:nth-child(1){
+width: 9%;
+}
+.tab_project td:nth-child(2),.tab_project th:nth-child(2){
+width: 15%;
+}
+.tab_project td:nth-child(3),.tab_project th:nth-child(3){
+width: 7%;
+}
+.tab_project td:nth-child(4),.tab_project th:nth-child(4){
+width: 7%;
+}
+.tab_project td:nth-child(5),.tab_project th:nth-child(5){
+width: 5%;
+}
+.tab_project td:nth-child(6),.tab_project th:nth-child(6){
+width: 10%;
+}
+.tab_project td:nth-child(7),.tab_project th:nth-child(7){
+width: 8%;
+}
+.tab_project td:nth-child(8),.tab_project th:nth-child(8){
+width: 18%;
+}
+.tab_project td:nth-child(9),.tab_project th:nth-child(9){
+width: 6%;
+}
+.tab_project td:nth-child(10),.tab_project th:nth-child(10){
+width: 4%;
+}
+/*Table header and td managemant for project Document */
+.tab_projectr td:nth-child(1),.tab_projectr th:nth-child(1){
+width: 8%;
+}
+.tab_projectr td:nth-child(2),.tab_projectr th:nth-child(2){
+width: 9%;
+}
+.tab_projectr td:nth-child(3),.tab_projectr th:nth-child(3){
+width: 11%;
+}
+.tab_projectr td:nth-child(4),.tab_projectr th:nth-child(4){
+width: 8%;
+}
+.tab_projectr td:nth-child(5),.tab_projectr th:nth-child(5){
+width: 8%;
+}
+.tab_projectr td:nth-child(6),.tab_projectr th:nth-child(6){
+width: 9%;
+}
+.tab_projectr td:nth-child(7),.tab_projectr th:nth-child(7){
+width: 22%;
+}
+.tab_projectr td:nth-child(8),.tab_projectr th:nth-child(8){
+width: 5%;
+}
+.tab_projectr td:nth-child(9),.tab_projectr th:nth-child(9){
+width: 5.8%;
+}
+.tab_projectr td:nth-child(10),.tab_projectr th:nth-child(10){
+width: 4%;
+}
+.long{
+  display: inline-block;
+  position: relative;
+  width: 99%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.long:HOVER {
+  display: inline-block;
+  position: relative;
+  width: 98%;
+  white-space: pre-line;
+  font-size:16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  transition: transform 20s;
+}
+/*
+ * higher z-index brings element to front
+ * auto width cancels the overflow
+ */   
+.long:hover {
+   z-index: 1;
+  width: auto;
+  background-color: #FFFFCC;
+
+}  
+.manage{
+cursor: pointer;
+user-select: none;
+}
+.sel1{
+display: block;
+  background-color: #E7E9EC;
+  color: #000000;
+  font-size: 12px;
+  padding-right: 0px;
+  width: 90px !important;
+}
+.actives{
+  display: block;
+  background-color: #E7E9EC;
+  color: #000000;
+  font-size: 12px;
+  padding-right: 0px;
+  width: 90px !important;
+}
+form {
+	margin-left: 0px;
+	margin-top: 0px;
+	border: none;
+	width: 100%;
+	text-align: left;
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.download {
+  content: "\02795";
+  color: #000;
+  display: inline-block;
+  margin-right: 3px;
+  font-size: 15px;
+}
+.Icanfire{
+display: block;
+}

@@ -3,7 +3,8 @@ The data portal system system developed to manage data and its transactions. Als
 
 
 
-OUTPUT of DATA PORTAL:
+
+SAMPLE OUTPUT OF THE FRAMEWORK (Data Portal Output):
 
 Data Upload Module is used to upload large sized and broadly classfied big data all in one in a unit interface:
 The user (Biniyam Zeray) uploads different types of large sized data such as ninety-two (92) vector data (shape files), forty-nine (49) raster data, two (2) point cloud data, one (1) drawing files, one (1) total station data, one (1) time series data, and one (1) other data. Simultaneously, he also annotated meta data such as defining the project name, selecting project’s thematic area, selecting classification of data under the thematic area, outlining file types via checking the check list, and selecting region and basin

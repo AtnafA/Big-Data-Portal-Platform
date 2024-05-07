@@ -1,4 +1,4 @@
-![Uploading Overlay.png…]()
+![Overlay](https://github.com/AtnafA/Big-Data-Portal-Platform/assets/32127258/698e8013-dfcc-4a30-b92e-931ce8baea8a)
 
 The data portal is developed to overlay, share and manage the project's data that were collected from different geographic locations of Ethiopia. The platform is vital to manage large sized, heterogeneous data and its transactions. Also it implemented a cross-platform authentication scheme known as Unified Identity Authentication Service (UIAS). UIAS is the Security in Depth (SiD) mechanism that provides multilayered security measurements such as an implementation of Transport Layer Security (TLS) over HTTP protocol for web requests and creates a web-form with “POST” method. It also configures SSL over LDAP server for identity validation and implements access privileges for data mapping and object binding. As shown in figure below, the enterprise system has different components and is designed into three distinct layers such as presentation, service and data access layer.
 

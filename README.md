@@ -12,7 +12,7 @@ The user (Biniyam Zeray) uploads different types of large sized data such as nin
 
 
 Data Access Module is used to Overlay and Overview meta data of Big data as well as used to dowload dataset:
-The potential user can loged into the platform to access the dataset. Accordingly, the user hover over the icon on the map to see the projects name. Then he/she can overview the meta data or datasets profile by clicking over the icon. For example, when the user hover over the icon "IR_11", it popups the project's name "Tendaho differnt types of Project all in one" (figure below). Then, when the user clicks over the icon, it displays peoject's meta data.
+The potential user can loged into the platform to access the dataset. Accordingly, the user hover over the icon on the map to see the projects name. Then he/she can overview the meta data or datasets profile by clicking over the icon. For example, when the user hover over the icon "IR_11", it popups the project's name "Tendaho differnt types of Project all in one" (figure below). Then, when the user clicks over the icon, it displays project's meta data.
 
 ![Overlay_access](https://github.com/AtnafA/Big-Data-Portal-Platform/assets/32127258/874a3118-ad84-490a-80ca-97d06908db2c)
 
